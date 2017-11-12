@@ -45,6 +45,14 @@
             var errorOverlay = $('#connerror');
             var website = $('iframe');
 
+            website.on('load', function(){
+                $(this).contents().find('a').on('click', function(e){
+                    e.preventDefault();
+                    return;
+                });
+            })
+
+
             function sync(){
 
                 function success(syncURL){

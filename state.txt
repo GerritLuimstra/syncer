@@ -1,1 +1,1 @@
-//localhost/admin.php
+/syncer/awesome2.php
